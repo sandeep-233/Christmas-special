@@ -105,7 +105,7 @@ function App() {
         }
       </div>
 
-        <div className="flex gap-2 overflow-x-auto md:overflow-x-hidden">
+        <div className="flex gap-2">
           <Draggable>
           <img
           src={deco1_img}
