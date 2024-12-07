@@ -109,52 +109,52 @@ function App() {
           <Draggable>
           <img
           src={deco1_img}
-          className=" w-[70%] md:w-[45%] h-[25%] cursor-pointer"
+          className=" w-[100%] md:w-[45%] h-[25%] cursor-pointer"
           />  
           </Draggable>  
           <Draggable>
           <img
           src={deco2_img}
-          className=" w-[70%] md:w-[45%] h-[25%] cursor-pointer"
+          className=" w-[100%] md:w-[45%] h-[25%] cursor-pointer"
           />
           </Draggable>
 
           <Draggable>
           <img
           src={goldedBulb1_img}
-          className={` w-[30%] md:w-[16%] h-[12%] ${flag === false ? ("") : ("glow_gold")}  cursor-pointer`}
+          className={` w-[50%] md:w-[16%] h-[12%] ${flag === false ? ("") : ("glow_gold")}  cursor-pointer`}
           />
           </Draggable>
           <Draggable>
           <img
           src={goldedBulb2_img}
-          className={`w-[30%] md:w-[16%] h-[12%] ${flag === false ? ("") : ("glow_gold")}  cursor-pointer`}
+          className={`w-[50%] md:w-[16%] h-[12%] ${flag === false ? ("") : ("glow_gold")}  cursor-pointer`}
           />
           </Draggable>
 
           <Draggable>
           <img
           src={whiteBulb_img}
-          className={` w-[30%] md:w-[16%] h-[12%]  ${flag === false ? ("") : ("glow_white")} cursor-pointer`}
+          className={` w-[50%] md:w-[16%] h-[12%]  ${flag === false ? ("") : ("glow_white")} cursor-pointer`}
           />
           </Draggable>
           <Draggable>
           <img
           src={whiteBulb_img}
-          className={` w-[30%] md:w-[16%] h-[12%]  ${flag === false ? ("") : ("glow_white")} cursor-pointer`}
+          className={` w-[50%] md:w-[16%] h-[12%]  ${flag === false ? ("") : ("glow_white")} cursor-pointer`}
           />
           </Draggable>
 
           <Draggable>
           <img
           src={redBulb_img}
-          className={` w-[30%] md:w-[16%] h-[12%] ${flag === false ? ("") : ("glow_red")} cursor-pointer`}
+          className={` w-[50%] md:w-[16%] h-[12%] ${flag === false ? ("") : ("glow_red")} cursor-pointer`}
           />
           </Draggable>
           <Draggable>
           <img
           src={redBulb_img}
-          className={`w-[30%] md:w-[16%] h-[12%] ${flag === false ? ("") : ("glow_red")} cursor-pointer`}
+          className={`w-[50%] md:w-[16%] h-[12%] ${flag === false ? ("") : ("glow_red")} cursor-pointer`}
           />
           </Draggable>
 
@@ -174,7 +174,7 @@ function App() {
         
       {
         display && (
-          <div className=" p-11 absolute glassmorphic flex flex-col gap-2 items-center justify-center text-lg">
+          <div className=" p-11 absolute glassmorphic flex flex-col gap-2 items-center justify-center text-lg text-center">
             <p className="glow_text">Drag the items to decorate the <b>CHRISTMAS TREE</b> .</p>
             <p className="glow_text">After that hit the <b>ON</b> button.</p>
             <button onClick={handleDisplay}
