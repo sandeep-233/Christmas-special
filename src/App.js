@@ -134,27 +134,29 @@ function App() {
 
           <Draggable>
           <img
-          src={whiteBulb_img}
-          className={` w-[70%] md:w-[16%] h-[12%]  ${flag === false ? ("") : ("glow_white")} cursor-pointer`}
-          />
-          </Draggable>
-          <Draggable>
-          <img
-          src={whiteBulb_img}
-          className={` w-[70%] md:w-[16%] h-[12%]  ${flag === false ? ("") : ("glow_white")} cursor-pointer`}
+          src={redBulb_img}
+          className={` w-[70%] md:w-[16%] h-[12%] ${flag === false ? ("") : ("glow_red")} cursor-pointer`}
           />
           </Draggable>
 
           <Draggable>
           <img
-          src={redBulb_img}
-          className={` w-[70%] md:w-[16%] h-[12%] ${flag === false ? ("") : ("glow_red")} cursor-pointer`}
+          src={whiteBulb_img}
+          className={` w-[70%] md:w-[16%] h-[12%]  ${flag === false ? ("") : ("glow_white")} cursor-pointer`}
           />
           </Draggable>
+            
           <Draggable>
           <img
           src={redBulb_img}
           className={`w-[70%] md:w-[16%] h-[12%] ${flag === false ? ("") : ("glow_red")} cursor-pointer`}
+          />
+          </Draggable>
+
+          <Draggable>
+          <img
+          src={whiteBulb_img}
+          className={` w-[70%] md:w-[16%] h-[12%]  ${flag === false ? ("") : ("glow_white")} cursor-pointer`}
           />
           </Draggable>
 
