@@ -41,7 +41,7 @@ function App() {
      })
   }
 
-  return (
+ return (
     <div className=" h-[100vh] w-full flex flex-col justify-around bg-gray-900 items-center overflow-hidden">
 
       {
@@ -91,6 +91,56 @@ function App() {
         )
       }
 
+        <div className=" h-[75vh] absolute flex flex-col justify-center left-0 sm:hidden ">
+          <Draggable>
+          <img
+          alt="golden bulb"
+          src={goldedBulb1_img}
+          className={` w-[10%] ${flag === false ? ("") : ("glow_gold")}  cursor-pointer`}
+          />
+          </Draggable>
+
+          <Draggable>
+          <img
+          alt="golden bulb"
+          src={goldedBulb2_img}
+          className={` w-[10%] ${flag === false ? ("") : ("glow_gold")}  cursor-pointer`}
+          />
+          </Draggable>
+
+          <Draggable>
+          <img
+          alt="white bulb"
+          src={whiteBulb_img}
+          className={` w-[10%]  ${flag === false ? ("") : ("glow_white")} cursor-pointer`}
+          />
+          </Draggable>
+          <Draggable>
+          <img
+          alt="white bulb"
+          src={whiteBulb_img}
+          className={` w-[10%]  ${flag === false ? ("") : ("glow_white")} cursor-pointer`}
+          />
+          </Draggable>
+
+          <Draggable>
+          <img
+          alt="red bulb"
+          src={redBulb_img}
+          className={`w-[10%] ${flag === false ? ("") : ("glow_red")} cursor-pointer`}
+          />
+          </Draggable>
+          <Draggable>
+          <img
+          alt="red bulb"
+          src={redBulb_img}
+          className={`w-[10%] ${flag === false ? ("") : ("glow_red")} cursor-pointer`}
+          />
+          </Draggable>
+
+        </div>
+
+
       <div className="tree w-full h-[75%] flex items-center justify-center mt-6">
         <img
           src={tree_img}
@@ -105,28 +155,30 @@ function App() {
         }
       </div>
 
-        <div className="flex gap-2">
+        <div className="flex justify-center">
           <Draggable>
           <img
           src={deco1_img}
-          className=" w-[130%] md:w-[45%] h-[25%] cursor-pointer"
+          className=" w-[45%] h-[25%] cursor-pointer"
           />  
           </Draggable>  
           <Draggable>
           <img
           src={deco2_img}
-          className=" w-[130%] md:w-[45%] h-[25%] cursor-pointer"
+          className=" w-[45%] h-[25%] cursor-pointer"
           />
           </Draggable>
 
           <Draggable>
           <img
+          alt="golden bulb"
           src={goldedBulb1_img}
           className={` w-[70%] md:w-[16%] h-[12%] ${flag === false ? ("") : ("glow_gold")}  cursor-pointer`}
           />
           </Draggable>
           <Draggable>
           <img
+          alt="golded bulb"
           src={goldedBulb2_img}
           className={`w-[70%] md:w-[16%] h-[12%] ${flag === false ? ("") : ("glow_gold")}  cursor-pointer`}
           />
@@ -134,29 +186,31 @@ function App() {
 
           <Draggable>
           <img
+          alt="white bulb"
+          src={whiteBulb_img}
+          className={` w-[70%] md:w-[16%] h-[12%]  ${flag === false ? ("") : ("glow_white")} cursor-pointer`}
+          />
+          </Draggable>
+          <Draggable>
+          <img
+          alt="white bulb"
+          src={whiteBulb_img}
+          className={` w-[70%] md:w-[16%] h-[12%]  ${flag === false ? ("") : ("glow_white")} cursor-pointer`}
+          />
+          </Draggable>
+
+          <Draggable>
+          <img
+          alt="red bulb"
           src={redBulb_img}
           className={` w-[70%] md:w-[16%] h-[12%] ${flag === false ? ("") : ("glow_red")} cursor-pointer`}
           />
           </Draggable>
-
           <Draggable>
           <img
-          src={whiteBulb_img}
-          className={` w-[70%] md:w-[16%] h-[12%]  ${flag === false ? ("") : ("glow_white")} cursor-pointer`}
-          />
-          </Draggable>
-            
-          <Draggable>
-          <img
+          alt="red bulb"
           src={redBulb_img}
           className={`w-[70%] md:w-[16%] h-[12%] ${flag === false ? ("") : ("glow_red")} cursor-pointer`}
-          />
-          </Draggable>
-
-          <Draggable>
-          <img
-          src={whiteBulb_img}
-          className={` w-[70%] md:w-[16%] h-[12%]  ${flag === false ? ("") : ("glow_white")} cursor-pointer`}
           />
           </Draggable>
 
@@ -167,10 +221,10 @@ function App() {
           border-[1px] px-2 py-1 rounded-xl glow_button hover:scale-95 z-50"
         >
           {
-            flag == true && (<p>OFF</p>)
+            flag === true && (<p>OFF</p>)
           }
           {
-            flag == false && (<p>ON</p>)
+            flag === false && (<p>ON</p>)
           }
       </button>
         
