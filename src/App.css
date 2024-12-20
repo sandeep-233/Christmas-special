@@ -73,7 +73,7 @@
 	position: absolute;
 	bottom: 0%;
 	left: 0%;
-	width: 10%;
+	width: 124px;
 	opacity: 0;
 	animation: move 16s linear infinite;
 }
