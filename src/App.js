@@ -10,7 +10,8 @@ import goldedBulb1_img from './assets/golded_bulb1.png';
 import goldedBulb2_img from './assets/golded_bulb2.png';
 import redBulb_img from './assets//red_bulb.png';
 import whiteBulb_img from './assets/white_bulb.png';
-import santa from './assets/santa.gif'
+// import santa from './assets/santa.gif'
+import santa_claus from './assets/santa-claus-santa.gif'
 import { useState } from "react";
 import Snowflake from "./Snowflake";
 
@@ -41,9 +42,13 @@ function App() {
      })
   }
 
- return (
+  return (
     <div className=" h-[100vh] w-full flex flex-col justify-around bg-gray-900 items-center overflow-hidden">
-
+      {
+        flag && (
+          <img src={santa_claus} className="santa" />
+        )
+      }
       {
         flag && (
           <div className=" absolute top-0 flex w-[95%] h-fit">
@@ -80,15 +85,6 @@ function App() {
           </div>
         )
         
-      }
-      
-      {
-        flag && (
-          <img
-            src={santa}
-            className=" absolute bottom-0 right-0 w-24 "
-          />
-        )
       }
 
         <div className=" h-[75vh] absolute flex flex-col justify-center left-0 sm:hidden ">
