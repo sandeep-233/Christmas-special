@@ -43,7 +43,7 @@ function App() {
   }
 
   return (
-    <div className=" h-[100vh] w-full flex flex-col justify-around bg-gray-900 items-center overflow-hidden">
+    <div className=" h-[100vh] w-full flex flex-col justify-around bg-black items-center overflow-hidden">
       {
         flag && (
           <img src={santa_claus} className="santa" />
